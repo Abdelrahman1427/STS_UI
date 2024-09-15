@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Apple iPhone 13 Pro",
+    "image": "https://www.apple.com/v/iphone-13-pro/c/images/meta/iphone-13-pro_overview__b1vk24cp916q_og.png",
+    "weight": "173g",
+    "price": 799.00
+  },
+  {
+    "name": "Apple MacBook Pro",
+    "image": "https://media.croma.com/image/upload/v1685966374/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_umnwok.png",
+    "weight": "2.0kg",
+    "price": 2399.00
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "image": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7-availability_world-time-face_10052021_carousel.jpg.large.jpg",
+    "weight": "47.1g",
+    "price": 399.00
+  },
+  {
+    "name": "Apple AirPods Pro",
+    "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1692771141/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/262015_qwcykq.png",
+    "weight": "5.4g",
+    "price": 249.00
+  },
+  {
+    "name": "Apple iPad Pro",
+    "image": "https://www.aptronixindia.com/media/catalog/product/i/p/ipad_10th_gen_1.png",
+    "weight": "1.0kg",
+    "price": 799.00
+  },
+  {
+    "name": "Apple iMac 24-inch",
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/imac-24-no-id-blue-selection-hero-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1701459101618",
+    "weight": "4.48kg",
+    "price": 1299.00
+  },
+  {
+    "name": "Apple HomePod mini",
+    "image": "https://i0.wp.com/llounge.in/wp-content/uploads/2021/05/homepod-mini-1.jpg?fit=500%2C500&ssl=1",
+    "weight": "345g",
+    "price": 99.00
+  },
+  {
+    "name": "Apple AirTag",
+    "image": "https://www.jiomart.com/images/product/original/491996661/apple-airtag-loop-made-with-durable-polyurethane-material-lightweight-mk0x3zm-a-electric-orange-digital-o491996661-p590778279-0-202109141847.jpeg?im=Resize=(420,420)",
+    "weight": "11g",
+    "price": 29.00
+  },
+  {
+    "name": "Apple TV 4K",
+    "image": "https://m.media-amazon.com/images/I/51Y-Dulc3bL._AC_UF1000,1000_QL80_.jpg",
+    "weight": "425g",
+    "price": 179.00
+  },
+  {
+    "name": "Apple MagSafe Battery Pack",
+    "image": "https://static-01.daraz.pk/p/48fdb8d64c79fd3ad5f981f998e713e3.jpg_750x750.jpg_.webp",
+    "weight": "112g",
+    "price": 99.00
+  },
+  {
+    "name": "Apple MacBook Air",
+    "image": "https://media.croma.com/image/upload/v1685966374/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_umnwok.png",
+    "weight": "1.29kg",
+    "price": 999.00
+  },
+  {
+    "name": "Apple iPhone 13",
+    "image": "https://cellbuddy.in/buddy/wp-content/uploads/2022/09/13-red.png",
+    "weight": "174g",
+    "price": 699.00
+  },
+  {
+    "name": "Apple iPad mini",
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-select-wifi-purple-202109_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&.v=1629840706000",
+    "weight": "300.5g",
+    "price": 499.00
+  },
+  {
+    "name": "Apple iPod touch",
+    "image": "https://www.siasat.com/wp-content/uploads/2022/05/ipod.jpg",
+    "weight": "88g",
+    "price": 199.00
+  },
+  {
+    "name": "Apple Pencil (2nd Generation)",
+    "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/apple-pencil-2nd-gen-KaEv9J9-600.jpg",
+    "weight": "20.7g",
+    "price": 129.00
+  },
+  {
+    "name": "Apple Watch SE",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1vklypfyk4N4b0_6PCyBQ-XgtumyCPb5FI6IfR2GIg&s",
+    "weight": "36.4g",
+    "price": 279.00
+  },
+  {
+    "name": "Apple Magic Keyboard",
+    "image": "https://detec.in/cdn/shop/products/3_991f7a26-c0f1-4818-974a-7eb54b1f0be7.jpg?v=1651045166",
+    "weight": "690g",
+    "price": 349.00
+  },
+  {
+    "name": "Apple Leather Sleeve",
+    "image": "https://m.media-amazon.com/images/I/31KK-prXanL.jpg",
+    "weight": "480g",
+    "price": 199.00
+  },
+  {
+    "name": "Apple Magic Mouse 2",
+    "image": "https://m.media-amazon.com/images/I/51yO5ZmagBL.jpg",
+    "weight": "99.2g",
+    "price": 79.00
+  },
+  {
+    "name": "Apple Lightning to USB Cable",
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MD818?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1600799997000",
+    "weight": "20.4g",
+    "price": 19.00
+  },
+  {
+    "name": "Apple iPad Pro",
+    "image": "https://www.aptronixindia.com/media/catalog/product/i/p/ipad_10th_gen_1.png",
+    "weight": "1.0kg",
+    "price": 799.00
+  },
+  {
+    "name": "Apple iMac 24-inch",
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/imac-24-no-id-blue-selection-hero-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1701459101618",
+    "weight": "4.48kg",
+    "price": 1299.00
+  },
+  {
+    "name": "Apple HomePod mini",
+    "image": "https://i0.wp.com/llounge.in/wp-content/uploads/2021/05/homepod-mini-1.jpg?fit=500%2C500&ssl=1",
+    "weight": "345g",
+    "price": 99.00
+  },
+  {
+    "name": "Apple AirTag",
+    "image": "https://www.jiomart.com/images/product/original/491996661/apple-airtag-loop-made-with-durable-polyurethane-material-lightweight-mk0x3zm-a-electric-orange-digital-o491996661-p590778279-0-202109141847.jpeg?im=Resize=(420,420)",
+    "weight": "11g",
+    "price": 29.00
+  }
+]

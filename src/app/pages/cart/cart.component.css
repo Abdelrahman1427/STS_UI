@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1{
+  margin: 20px;
+}
+
+p span{
+  color: #007bff;
+  cursor: pointer;
+}
+
+.product-details {
+  width: 100%;
+  max-width: 800px;
+}
+
+.product-card {
+  margin-bottom: 20px;
+}
+
+.cart-item-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-price {
+  color: #007bff;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.quantity-button:hover {
+  background-color: #0056b3;
+}
+
+.quantity {
+  font-weight: bold;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: #9c2f3d;
+}
+
+.no-products {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+
+.payment-details {
+  margin-top: 20px;
+}
+
+.pay-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+
+.cancel-button {
+  background-color: #de0808;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.payment-details ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0; /* Optional: Remove default margin */
+}
+
+.pay-button:hover {
+  background-color: #054308;
+}
+
+
+.cancel-button:hover {
+  background-color: #e44e4e;
+}

@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img routerLink="/catalogue" src="https://media.licdn.com/dms/image/v2/D4D0BAQEdYBo8kkVXJQ/company-logo_200_200/company-logo_200_200/0/1691650509420/summit_technology_solutions_logo?e=1734566400&v=beta&t=tB8WZKsNBpk0PQTnH8onPZiF-fqd96EP7s41eg0x1xE" alt="logo">
+  <a class="navbar-brand" routerLink="/"><b>summit</b></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/catalogue" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/cart" routerLinkActive="active">Cart</a>
+      </li>
+    </ul>
+  </div>
+
+  <a routerLink="/cart" class="cart-link">
+    <img class="cart-icon" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" alt="Cart">
+  </a>
+</nav>
+
+<!-- 
+<mat-toolbar color="primary">
+  <span class="spacer"></span>
+  <a mat-button routerLink="/">Home</a>
+  <a mat-button routerLink="/products">Admin</a>
+  <a mat-button routerLink="/cartCrud">Shop And Cart</a>
+  <a mat-button routerLink="/catalogue">Catalogue</a>
+  <a mat-button routerLink="/cart">Cart</a>
+
+</mat-toolbar> -->
+
+<!-- <div class="welcome-container">
+  <h1>Welcome to Our STS Shop</h1>
+</div> -->
+<router-outlet></router-outlet>

@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>CHECKOUT YOUR CART</h1>
+  <div class="product-details">
+    <div *ngIf="cartService.cartItems.length > 0; else noProducts">
+      <div *ngFor="let item of cartService.cartItems" class="product-card">
+        <div class="cart-item-container">
+          <div class="product-info">
+            <p class="product-name">Name: {{ item.product.name }}</p>
+            <p class="product-price">Price: {{ item.product.price | currency }}</p>
+          </div>
+          <div class="quantity-control">
+            <button (click)="updateQuantity(item.product, -1)" class="quantity-button">-</button>
+            <span class="quantity">{{ cartService.getProductQuantity(item.product) }}</span>
+            <button (click)="updateQuantity(item.product, 1)" class="quantity-button">+</button>
+          </div>
+          <button class="remove-button" (click)="removeItem(item.product)">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #noProducts>
+      <p class="no-products">No product added <span routerLink="/catalogue">lets shop</span></p>
+    </ng-template>
+  </div>
+
+  <div *ngIf="cartService.cartItems.length > 0" class="payment-details">
+    <h2>Payment Details</h2>
+    <h4 class="total-amount">Total Amount: {{ getTotal() | currency }}</h4>
+    <ul>
+      <li>
+      <button class="pay-button" routerLink="/checkout-page">Checkout</button>
+      <button class="cancel-button"> <a mat-button routerLink="/catalogue">Cancel</a></button>
+      
+
+      </li>
+  </ul>
+  </div>
+</div>

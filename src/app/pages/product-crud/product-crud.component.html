@@ -1,0 +1,61 @@
+<h2>Manage Products</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Visible</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>
+        <ng-container *ngIf="editProductId === product.id; else viewTemplate">
+          <input type="text" [(ngModel)]="currentProduct.name" placeholder="Name">
+        </ng-container>
+        <ng-template #viewTemplate>{{ product.name }}</ng-template>
+      </td>
+      <td>
+        <ng-container *ngIf="editProductId === product.id; else viewTemplatePrice">
+          <input type="number" [(ngModel)]="currentProduct.price" placeholder="Price">
+        </ng-container>
+        <ng-template #viewTemplatePrice>{{ product.price }}</ng-template>
+      </td>
+      <td>
+        <ng-container *ngIf="editProductId === product.id; else viewTemplateQty">
+          <input type="number" [(ngModel)]="currentProduct.qty" placeholder="Quantity">
+        </ng-container>
+        <ng-template #viewTemplateQty>{{ product.qty }}</ng-template>
+      </td>
+      <td>
+        <button (click)="toggleVisibility(product)" class="toggle-btn">
+          {{ product.isVisible ? 'Hide' : 'Show' }}
+        </button>
+      </td>
+      <td>
+        <ng-container *ngIf="editProductId === product.id; else actionsTemplate">
+          <button (click)="updateProduct(product.id)" class="action-btn update-btn">Update</button>
+          <button (click)="cancelEdit()" class="action-btn cancel-btn">Cancel</button>
+        </ng-container>
+        <ng-template #actionsTemplate>
+          <button (click)="openEdit(product)" class="action-btn edit-btn">Edit</button>
+          <button (click)="deleteProduct(product.id)" class="action-btn delete-btn">Delete</button>
+        </ng-template>
+      </td>
+    </tr>
+    <!-- Row for Adding New Product -->
+    <tr>
+      <td><input type="text" [(ngModel)]="newProduct.name" placeholder="Name"></td>
+      <td><input type="number" [(ngModel)]="newProduct.price" placeholder="Price"></td>
+      <td><input type="number" [(ngModel)]="newProduct.qty" placeholder="Quantity"></td>
+      <td>
+        <button (click)="newProduct.isVisible = true" class="toggle-btn">Show</button>
+      </td>
+      <td>
+        <button (click)="createProduct()" class="action-btn add-btn">Add Product</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .section {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart {
+    margin-right: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  input[type="text"], input[type="number"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

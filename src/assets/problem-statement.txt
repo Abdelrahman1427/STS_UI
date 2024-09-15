@@ -1,0 +1,23 @@
+Angular
+
+Problem Statement
+
+Create an angular project (12+) with routing included. The project will have 2 routes - Catalogue page and Cart/Basket page.
+Create a JSON file containing an array of Products/Products List with the following fields/properties - Name, Image, Weight, Price.
+In the Catalogue page, display all the products after fetching from the JSON file along with an “Add to cart” button below the product card. On clicking the “Add to cart” button, the product should get added to the cart and the button UI should get replaced by a quantity control button, for example “ (-) 1 (+)”. On clicking the (+), the quantity of the added product should be increased in cart and on clicking the (-), the quantity of the added product should be decreased in cart, ultimately leading to removal of product from the cart in case the user chooses 0 in the quantity control button, also the UI should be replaced by “Add to cart” button in such case.
+Show a cart icon in the catalogue page, clicking on which will navigate to the cart page.
+In the Cart page, show the list of added products by displaying the Name, Price and the no. of units ordered of a particular product. At the end of the page, show order total and estimated delivery date.
+In case of no added products, show a ‘No product added’ UI in the cart page.
+
+
+Points to remember -
+1. UI must be responsive.
+2. JSON file should be created under assets folder
+3. You can be creative with the UI as per your choice
+
+
+Bonus
+1. Show a remove button in the cart page, clicking on it will remove the product
+from the added products list and the same will reflect in the catalogue page. 
+2. Show a checkout/ confirm order button below the list of added products in the cart page, clicking on which will redirect the user to another page named “confirm order” which will display the whole order summary in non-editable format
+

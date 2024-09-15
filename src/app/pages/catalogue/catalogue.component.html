@@ -1,0 +1,27 @@
+<div class="product-container">
+  <div *ngFor="let product of products" class="product-card">
+    <img class="product-image" [src]="product.pictureUrl" alt="{{ product.name }}">
+    <h3 class="product-name">{{ product.name }}</h3>
+    <p class="product-info">Weight: {{ product.description }}</p>
+    <p class="product-info">Price: {{ product.price | currency }}</p>
+    <ng-container *ngIf="!cartService.isProductInCart(product)">
+      <button (click)="addToCart(product)" class="add-to-cart-button">Add to Cart</button>
+    </ng-container>
+    <ng-container *ngIf="cartService.isProductInCart(product)">
+      <div class="quantity-control">
+        <button (click)="updateQuantity(product, -1)" class="quantity-button">-</button>
+        <span class="quantity">{{ cartService.getProductQuantity(product) }}</span>
+        <button (click)="updateQuantity(product, 1)" class="quantity-button">+</button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+  <div class="paging-container">
+    <mat-paginator  [length]="totalItems"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="[5, 10, 25, 100]"
+                (page)="onPageChange($event)">
+  </mat-paginator>
+  </div>
+  

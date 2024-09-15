@@ -1,0 +1,105 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+} 
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 220px;
+  }
+  
+  .product-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .product-info {
+    text-align: center;
+  }
+  
+  .add-to-cart-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+  }
+  
+  .quantity-control {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .quantity-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px 10px;
+  }
+
+  .quantity {
+    font-size: 16px;
+  }
+  
+  .paging-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 5px 10px;
+
+  } 
+
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for extra small devices */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* CSS rules for small devices */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* CSS rules for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* CSS rules for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* CSS rules for extra large devices */
+}
+
+/* Landscape phones and small tablets */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* CSS rules for landscape phones and small tablets */
+}
+
+/* Portrait tablets and medium-sized desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS rules for portrait tablets and medium-sized desktops */
+}
