@@ -16,7 +16,12 @@ interface Product {
   pictureUrl: string;
   categoryName: string;
 }
-
+interface CartItem {
+  productId: number;
+  name: string;
+  quantity: number;
+  price: number;
+}
 
 @Component({
   selector: 'app-catalogue',
@@ -43,6 +48,7 @@ export class CatalogueComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.cartService.loadCartItems();
     this.loadProducts(this.pageIndex, this.pageSize); 
 
   }
@@ -87,14 +93,4 @@ export class CatalogueComponent implements OnInit {
     this.cartService.addToCart(product);
   }
 
-  updateQuantity(product: Product, quantity: number): void {
-    const currentQuantity = this.cartService.getProductQuantity(product);
-    const newQuantity = currentQuantity + quantity;
-
-    if (newQuantity <= 0) {
-      this.cartService.removeFromCart(product);
-    } else {
-      this.cartService.updateQuantity(product, newQuantity);
-    }
-  }
 }

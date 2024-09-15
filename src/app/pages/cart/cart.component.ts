@@ -10,6 +10,12 @@ interface Product {
   pictureUrl: string;
   categoryName: string;
 }
+interface CartItem {
+  productId: number;
+  name: string;
+  quantity: number;
+  price: number;
+}
 
 @Component({
   selector: 'app-cart',
@@ -26,31 +32,27 @@ export class CartComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.calculateEstimatedDeliveryDate();
+    this.cartService.loadCartItems();
+
   }
 
   getTotal(): number {
-    return this.cartService.cartItems.reduce((total, item) => total + (item.product.price * item.quantity), 0);
+    return this.cartService.cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
   }
 
-  calculateEstimatedDeliveryDate(): void {
-    const currentDate = new Date();
-    const estimatedDeliveryDate = new Date(currentDate.getTime() + (5 * 24 * 60 * 60 * 1000)); // Adding 5 days
-    this.estimatedDeliveryDate = estimatedDeliveryDate.toLocaleDateString();
+
+  removeItem(CartId: number): void {
+    this.cartService.removeFromCart(CartId);
   }
 
-  removeItem(product: Product): void {
-    this.cartService.removeFromCart(product);
-  }
-
-  updateQuantity(product: Product, quantity: number): void {
-    const currentQuantity = this.cartService.getProductQuantity(product);
+  updateQuantity(cartId: number, productId: number, quantity: number): void {
+    const currentQuantity = this.cartService.getProductQuantity(cartId);
     const newQuantity = currentQuantity + quantity;
 
     if (newQuantity <= 0) {
-      this.cartService.removeFromCart(product);
+      this.cartService.removeFromCart(cartId);
     } else {
-      this.cartService.updateQuantity(product, newQuantity);
+      this.cartService.updateQuantity(cartId, productId, newQuantity);
     }
   }
 
