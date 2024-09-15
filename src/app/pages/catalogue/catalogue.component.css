@@ -39,7 +39,16 @@
     margin: 10px auto 0;
     padding: 5px 10px;
   }
-  
+  .added-to-cart-button{
+    background-color: #ff8000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+  }
   .quantity-control {
     align-items: center;
     display: flex;

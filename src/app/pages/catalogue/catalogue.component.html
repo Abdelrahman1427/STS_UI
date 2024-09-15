@@ -9,9 +9,7 @@
     </ng-container>
     <ng-container *ngIf="cartService.isProductInCart(product)">
       <div class="quantity-control">
-        <button (click)="updateQuantity(product, -1)" class="quantity-button">-</button>
-        <span class="quantity">{{ cartService.getProductQuantity(product) }}</span>
-        <button (click)="updateQuantity(product, 1)" class="quantity-button">+</button>
+        <button class="added-to-cart-button">Added to Cart</button>
       </div>
     </ng-container>
   </div>
