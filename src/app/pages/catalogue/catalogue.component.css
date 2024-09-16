@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
+  margin: 10px;
+
 } 
   
   .product-card {
@@ -74,9 +76,32 @@
     flex-wrap: wrap;
     justify-content: center; 
     padding: 5px 10px;
+    margin: 10px;
 
   } 
-
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .filter-container label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .filter-container select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -90,17 +115,37 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /* CSS rules for medium devices */
+  .filter-container {
+    justify-content: space-around;
+  }
+  .filter-container {
+    justify-content: center;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  /* CSS rules for large devices */
+  .filter-container {
+    justify-content: center;
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  .product-container {
+    max-width: 80%;
+
+    justify-content: center; 
+    margin: 20px auto;
+  
+  } 
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  /* CSS rules for extra large devices */
+  .filter-container {
+    justify-content: space-between;
+  }
 }
 
 /* Landscape phones and small tablets */

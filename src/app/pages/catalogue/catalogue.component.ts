@@ -22,6 +22,11 @@ interface CartItem {
   quantity: number;
   price: number;
 }
+interface Category {
+  id: number;
+  name: string;
+
+}
 
 @Component({
   selector: 'app-catalogue',
@@ -32,9 +37,9 @@ interface CartItem {
 })
 export class CatalogueComponent implements OnInit {
   products: Product[] = [];
-  filteredProducts: Product[] = [];
-  filterTerm: string = '';
+  categories: Category[] = [];
 
+  selectedCategoryId: number  = 0;
   totalItems = 0;
   pageSize = 10;
   pageIndex = 0;
@@ -53,8 +58,24 @@ export class CatalogueComponent implements OnInit {
   ngOnInit(): void {
     this.cartService.loadCartItems();
     this.loadProducts(this.pageIndex, this.pageSize); 
-
+    this.loadCategories();
   }
+  onCategoryChange(event: any): void {
+    this.pageIndex = 0; // Reset pagination when filtering
+    this.loadProducts(this.pageIndex, this.pageSize); // Reload products with the selected category filter
+  }
+  loadCategories(): void {
+    this.http.get<Category[]>('https://localhost:7193/Category/GetLookUp').subscribe(
+      items => {
+        this.categories = items;
+      },
+      error => {
+        console.error('Error fetching categories:', error);
+  
+      }
+    );
+  }
+
   loadProducts(pageIndex: number, pageSize: number): void {
     const body = {
       pageIndex: pageIndex,
@@ -62,6 +83,9 @@ export class CatalogueComponent implements OnInit {
       sortingDTO: {
         orderBy: 'string',
         isOrderAsc: true
+      },
+      filter: {
+        categoryId: this.selectedCategoryId // Pass the selected category ID (null if no filter)
       }
     };
 
@@ -88,16 +112,14 @@ export class CatalogueComponent implements OnInit {
     );
   }
 
-  onPageChange(event: PageEvent): void {
-    this.loadProducts(event.pageIndex, event.pageSize);
-  }
+ // Handle pagination change
+ onPageChange(event: any): void {
+  this.pageIndex = event.pageIndex;
+  this.pageSize = event.pageSize;
+  this.loadProducts(this.pageIndex, this.pageSize);
+}
 
   addToCart(product: Product): void {
     this.cartService.addToCart(product);
-  }
-  filterProducts(): void {
-    this.filteredProducts = this.products.filter(product =>
-      product.name.toLowerCase().includes(this.filterTerm.toLowerCase())
-    );
   }
 }

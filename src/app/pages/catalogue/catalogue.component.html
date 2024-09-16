@@ -1,7 +1,14 @@
-<input type="text" [(ngModel)]="filterTerm" (input)="filterProducts()" placeholder="Filter products by name" />
-
+<div class="filter-container">
+  <label for="categorySelect">Filter by Category:</label>
+  <select id="categorySelect" [(ngModel)]="selectedCategoryId" (change)="onCategoryChange($event)">
+    <option [value]="0">All Categories</option> <!-- Option for no filtering -->
+    <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+  </select>
+</div>
 <div class="product-container">
 
+
+  
   <div *ngFor="let product of products" class="product-card">
     <img class="product-image" [src]="product.pictureUrl" alt="{{ product.name }}">
     <h3 class="product-name">{{ product.name }}</h3>
