@@ -1,35 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../cart.service';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule ,RouterModule],
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  estimatedDeliveryDate: string = '';
 
-  constructor(
-    public cartService: CartService,
-    ) { }
+  constructor(public cartService: CartService) { }
 
   ngOnInit(): void {
     this.cartService.loadCartItems();
-
   }
 
   getTotal(): number {
-    return this.cartService.cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+    return this.cartService.cartItems
+      .reduce((total, item) => total + (item.price * item.quantity), 0);
   }
 
-
-  removeItem(CartId: number): void {
-    this.cartService.removeFromCart(CartId);
+  removeItem(cartId: number): void {
+    this.cartService.removeFromCart(cartId);
   }
 
   updateQuantity(cartId: number, productId: number, quantity: number): void {
@@ -42,6 +40,4 @@ export class CartComponent implements OnInit {
       this.cartService.updateQuantity(cartId, productId, newQuantity);
     }
   }
-
- 
 }

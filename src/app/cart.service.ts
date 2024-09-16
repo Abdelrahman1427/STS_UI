@@ -3,69 +3,59 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { AddToCart, CartItem } from './models/cartItem.model';
 import { Product } from './models/product.model';
-
-
-
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-   cartItems: CartItem[] = [];
-   addItem: AddToCart[] = [];
+  cartItems: CartItem[] = [];
+  addItem: AddToCart[] = [];
+  private apiUrl = 'https://localhost:7193/CartItem';
 
-   private apiUrl = 'https://localhost:7193/CartItem/Add';
+  constructor(private http: HttpClient) { }
 
-   constructor(private http: HttpClient) { }
-  
-   loadCartItems(): void {
-    this.http.get<CartItem[]>('https://localhost:7193/CartItem/GetLookUp').subscribe(
-      items => {
-        this.cartItems = items;
-      },
-      error => {
-        console.error('Error fetching cart items:', error);
-  
-      }
-    );
-  }
 
   addToCartBE(addItem: AddToCart): Observable<AddToCart> {
-    return this.http.post<AddToCart>(this.apiUrl, addItem);
+    return this.http.post<AddToCart>(`${environment.apiUrl}/CartItem/Add`, addItem);
+  }
+
+  removeFromCartService(id: number): Observable<void> {
+    return this.http.delete<void>(`${environment.apiUrl}/CartItem/Delete/${id}`);
+  }
+  updateCartItem(id: number, quantity: number): Observable<void> {
+    return this.http.put<void>(`${environment.apiUrl}/CartItem/UpdateQuantity/${id}`, { quantity });
+  }
+
+
+  loadCartItems(): void {
+    this.http.get<CartItem[]>(`${environment.apiUrl}/CartItem/GetLookUp`)
+      .subscribe({
+        next: items => this.cartItems = items,
+        error: error => console.error('Error fetching cart items:', error)
+      });
   }
 
   addToCart(product: Product): void {
-    const existingItem = this.cartItems.find(item => item.productId=== product.id);
+    const existingItem = this.cartItems.find(item => item.productId === product.id);
     if (existingItem) {
       existingItem.quantity++;
     } else {
-      const addToCart: AddToCart = {
-        productId: product.id,
-        quantity: 1
-      };
-      this.addToCartBE(addToCart).subscribe(response => {
-        this.addItem.push(response);
-      }, error => {
-        console.error('Error fetching products:', error);
+      const addToCart: AddToCart = { productId: product.id, quantity: 1 };
+      this.addToCartBE(addToCart).subscribe({
+        next: response => this.addItem.push(response),
+        error: error => console.error('Error adding item to cart:', error)
       });
     }
   }
 
-  removeFromCartService(id: number): Observable<void> {
-    return this.http.delete<void>(`${"https://localhost:7193/CartItem/Delete"}/${id}`);
-  }
   removeFromCart(cartId: number): void {
-    const cartItems = this.cartItems[cartId];
-    this.removeFromCartService(cartId).subscribe(() => {
-      this.cartItems.splice(cartId, 1);
-    }, error => {
-      console.error('Error fetching products:', error);
+    this.removeFromCartService(cartId).subscribe({
+      next: () => this.cartItems = this.cartItems.filter(item => item.id !== cartId),
+      error: error => console.error('Error removing item from cart:', error)
     });
   }
-  updateCartItem(id: number, quantity: Number): Observable<void> {
-    return this.http.put<void>(`${"https://localhost:7193/CartItem/UpdateQuantity"}/${id}`, { quantity });
-  }
-  
+
   updateQuantity(cartId: number, productId: number, quantity: number): void {
     const item = this.cartItems.find(item => item.id === cartId);
     if (item) {
@@ -73,22 +63,18 @@ export class CartService {
       if (quantity === 0) {
         this.removeFromCart(cartId);
       }
-      this.updateCartItem(cartId, quantity).subscribe(() => {
-      }, error => {
-        console.error('Error fetching products:', error);
+      this.updateCartItem(cartId, quantity).subscribe({
+        error: error => console.error('Error updating quantity:', error)
       });
     }
-
   }
 
-  isProductInCart(product: Product): boolean {
-    return this.cartItems.some(item => item.productId === product.id);
+  isProductInCart(productId: Number): boolean {
+    return this.cartItems.some(item => item.productId === productId);
   }
 
   getProductQuantity(cartItemId: number): number {
     const item = this.cartItems.find(item => item.id === cartItemId);
     return item ? item.quantity : 0;
   }
-
-  
 }

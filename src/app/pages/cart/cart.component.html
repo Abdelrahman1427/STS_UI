@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>CHECKOUT YOUR CART</h1>
+  <h1>Cart</h1>
   <div class="product-details">
     <div *ngIf="cartService.cartItems.length > 0; else noProducts">
       <div *ngFor="let item of cartService.cartItems" class="product-card">
@@ -29,8 +29,8 @@
     <h4 class="total-amount">Total Amount: {{ getTotal() | currency }}</h4>
     <ul>
       <li>
-      <button class="pay-button" routerLink="/checkout-page">Checkout</button>
-      <button class="cancel-button"> <a mat-button routerLink="/catalogue">Cancel</a></button>
+      <button class="pay-button" routerLink="/catalogue">Checkout</button>
+      <button class="cancel-button" routerLink="/catalogue"> Cancel</button>
       
 
       </li>

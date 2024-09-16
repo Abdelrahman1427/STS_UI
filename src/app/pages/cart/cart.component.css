@@ -1,3 +1,4 @@
+/* Base styles */
 .container {
   display: flex;
   flex-direction: column;
@@ -5,11 +6,11 @@
   padding: 20px;
 }
 
-h1{
+h1 {
   margin: 20px;
 }
 
-p span{
+p span {
   color: #007bff;
   cursor: pointer;
 }
@@ -92,6 +93,9 @@ p span{
 
 .payment-details {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pay-button {
@@ -104,7 +108,6 @@ p span{
   padding: 10px 20px;
   margin-top: 30px;
 }
-
 
 .cancel-button {
   background-color: #de0808;
@@ -128,7 +131,59 @@ p span{
   background-color: #054308;
 }
 
-
 .cancel-button:hover {
   background-color: #e44e4e;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .product-details {
+    width: 80%;
+
+  }
+
+  .cart-item-container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .product-info {
+    margin-bottom: 10px;
+  }
+
+  .quantity-control {
+    margin-bottom: 10px;
+  }
+
+  .remove-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .payment-details {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .pay-button,
+  .cancel-button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .cancel-button {
+    margin-left: 0;
+  }
 }
