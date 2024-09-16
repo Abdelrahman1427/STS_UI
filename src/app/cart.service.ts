@@ -1,25 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { AddToCart, CartItem } from './models/cartItem.model';
+import { Product } from './models/product.model';
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  pictureUrl: string;
-  categoryName: string;
-}
-interface AddToCart {
-  productId: number;
-  quantity: number;
-}
-interface CartItem {
-  id: number;
-  productId: number;
-  productName: string;
-  quantity: number;
-  price: number;
-}
+
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -30,8 +17,7 @@ export class CartService {
    private apiUrl = 'https://localhost:7193/CartItem/Add';
 
    constructor(private http: HttpClient) { }
-
-
+  
    loadCartItems(): void {
     this.http.get<CartItem[]>('https://localhost:7193/CartItem/GetLookUp').subscribe(
       items => {

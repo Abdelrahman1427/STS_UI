@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { CartItem } from '../models/cart-item.model'; // Ensure this path is correct
+import { CartItem } from '../models/cartItem.model'; // Ensure this path is correct
 
 @Injectable({
   providedIn: 'root'
@@ -32,4 +32,8 @@ export class CartService {
   removeFromCart(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+
+
+
+  
 }

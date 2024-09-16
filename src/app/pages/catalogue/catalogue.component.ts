@@ -5,28 +5,11 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common'; 
 import { FormsModule } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
-import { PageEvent } from '@angular/material/paginator';
+import { Product } from '../../models/product.model';
+import { Category } from '../../models/category.model';
 
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  pictureUrl: string;
-  categoryName: string;
-}
-interface CartItem {
-  productId: number;
-  name: string;
-  quantity: number;
-  price: number;
-}
-interface Category {
-  id: number;
-  name: string;
 
-}
 
 @Component({
   selector: 'app-catalogue',
@@ -46,7 +29,6 @@ export class CatalogueComponent implements OnInit {
   private apiUrl = 'https://localhost:7193/Product/GetPage';
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-
 
   constructor(
     private http: HttpClient,
