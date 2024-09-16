@@ -4,13 +4,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; 
 
 
-interface CartItem {
-  productId: number;
-  name: string;
-  quantity: number;
-  price: number;
-}
-
 @Component({
   selector: 'app-cart',
   standalone: true,

@@ -67,7 +67,7 @@ export class CatalogueComponent implements OnInit {
         isOrderAsc: true
       },
       filter: {
-        categoryId: this.selectedCategoryId // Pass the selected category ID (null if no filter)
+        categoryId: this.selectedCategoryId
       }
     };
 
