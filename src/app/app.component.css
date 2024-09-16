@@ -53,6 +53,19 @@
    color: rgb(14, 13, 13);
     font-size: medium;
   }
+
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+  .router-outlet-wrapper {
+    padding-top: 70px;
+  }
+  
   @media (max-width: 600px) {
     h1 {
       font-size: 2rem;

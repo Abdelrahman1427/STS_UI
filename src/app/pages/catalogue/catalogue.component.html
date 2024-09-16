@@ -14,14 +14,15 @@
     <h3 class="product-name">{{ product.name }}</h3>
     <p class="product-info">Weight: {{ product.description }}</p>
     <p class="product-info">Price: {{ product.price | currency }}</p>
-    <ng-container *ngIf="!cartService.isProductInCart(product.id)">
-      <button (click)="addToCart(product)" class="add-to-cart-button">Add to Cart</button>
+    <ng-container *ngIf="!cartService.isProductInCart(product)">
+      <button (click)="addToCart(product)" routerLink="/cart" class="add-to-cart-button">Add to Cart</button>
     </ng-container>
-    <ng-container *ngIf="cartService.isProductInCart(product.id)">
+    <ng-container *ngIf="cartService.isProductInCart(product)">
       <div class="quantity-control">
         <button class="added-to-cart-button">Added to Cart</button>
       </div>
     </ng-container>
+
   </div>
 </div>
 

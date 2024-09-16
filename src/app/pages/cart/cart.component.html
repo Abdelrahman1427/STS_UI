@@ -26,10 +26,10 @@
 
   <div *ngIf="cartService.cartItems.length > 0" class="payment-details">
     <h2>Payment Details</h2>
-    <h4 class="total-amount">Total Amount: {{ getTotal() | currency }}</h4>
+    <h4 class="total-amount">Total Amount: {{ this.cartService.getTotalPrice() | currency }}</h4>
     <ul>
       <li>
-      <button class="pay-button" routerLink="/catalogue">Checkout</button>
+      <button class="pay-button" routerLink="/checkout">Checkout</button>
       <button class="cancel-button" routerLink="/catalogue"> Cancel</button>
       
 

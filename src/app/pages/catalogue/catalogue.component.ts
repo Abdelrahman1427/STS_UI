@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { CartService } from '../../cart.service';
+import { CartService } from '../../services/cart.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -8,11 +8,12 @@ import { MatPaginator } from '@angular/material/paginator';
 import { Product } from '../../models/product.model';
 import { Category } from '../../models/category.model';
 import { environment } from '../../../environments/environment';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-catalogue',
   standalone: true,
-  imports: [CommonModule, FormsModule, MatPaginator],
+  imports: [CommonModule, FormsModule, MatPaginator ,RouterModule],
   templateUrl: './catalogue.component.html',
   styleUrls: ['./catalogue.component.css']
 })
@@ -21,7 +22,7 @@ export class CatalogueComponent implements OnInit {
   categories: Category[] = [];
   selectedCategoryId: number = 0;
   totalItems = 0;
-  pageSize = 10;
+  pageSize = 20;
   pageIndex = 0;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -94,5 +95,8 @@ export class CatalogueComponent implements OnInit {
 
   addToCart(product: Product): void {
     this.cartService.addToCart(product);
+    this.loadProducts(); 
+
   }
+  
 }

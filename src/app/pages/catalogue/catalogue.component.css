@@ -2,8 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
-  margin: 10px;
-
 } 
   
   .product-card {
@@ -41,8 +39,9 @@
     margin: 10px auto 0;
     padding: 5px 10px;
   }
-  .added-to-cart-button{
-    background-color: #ff8000;
+
+  .added-to-cart-button {
+    background-color: #ff7b00;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -51,11 +50,10 @@
     margin: 10px auto 0;
     padding: 5px 10px;
   }
-  .quantity-control {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
+  
+
+  
+
   
   .quantity-button {
     background-color: #007bff;
@@ -66,10 +64,8 @@
     margin: 0 5px;
     padding: 5px 10px;
   }
-
-  .quantity {
-    font-size: 16px;
-  }
+  
+  
   
   .paging-container {
     display: flex;
