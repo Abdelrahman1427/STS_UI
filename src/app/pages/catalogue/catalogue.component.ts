@@ -22,7 +22,7 @@ export class CatalogueComponent implements OnInit {
   categories: Category[] = [];
   selectedCategoryId: number = 0;
   totalItems = 0;
-  pageSize = 20;
+  pageSize = 15;
   pageIndex = 0;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

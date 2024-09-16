@@ -57,15 +57,15 @@
   }
   
 
-  .pay-button {
+  .cart-button {
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 30px;
+    padding: 10px 25px;
+    margin: 10px;
   }
 
 
@@ -77,14 +77,14 @@
     cursor: pointer;
     font-size: 16px;
     padding: 10px 20px;
-    margin-top: 30px;
+    margin: 10px;
   }
 
   .cancel-button:hover {
     background-color: #e44e4e;
   }
   
-  .pay-button:hover {
+  .cart-button:hover {
     background-color: #054308;
   }
 

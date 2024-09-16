@@ -1,7 +1,7 @@
 <div class="filter-container">
   <label for="categorySelect">Filter by Category:</label>
   <select id="categorySelect" [(ngModel)]="selectedCategoryId" (change)="onCategoryChange()">
-    <option [value]="0">All Categories</option> <!-- Option for no filtering -->
+    <option [value]="0">All Categories</option> 
     <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
   </select>
 </div>
@@ -13,14 +13,12 @@
     <img class="product-image" [src]="product.pictureUrl" alt="{{ product.name }}">
     <h3 class="product-name">{{ product.name }}</h3>
     <p class="product-info">Weight: {{ product.description }}</p>
-    <p class="product-info">Price: {{ product.price | currency }}</p>
+    <p class="product-price">Price: {{ product.price | currency }}</p>
     <ng-container *ngIf="!cartService.isProductInCart(product)">
-      <button (click)="addToCart(product)" routerLink="/cart" class="add-to-cart-button">Add to Cart</button>
+      <button (click)="addToCart(product)" routerLink="/checkout" class="add-to-cart-button">Add to Cart</button>
     </ng-container>
     <ng-container *ngIf="cartService.isProductInCart(product)">
-      <div class="quantity-control">
         <button class="added-to-cart-button">Added to Cart</button>
-      </div>
     </ng-container>
 
   </div>

@@ -1,146 +1,157 @@
 [
   {
-    "name": "Apple iPhone 13 Pro",
-    "image": "https://www.apple.com/v/iphone-13-pro/c/images/meta/iphone-13-pro_overview__b1vk24cp916q_og.png",
-    "weight": "173g",
-    "price": 799.00
+      "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "price": 109.95,
+      "pictureUrl": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "categoryId": 1
   },
   {
-    "name": "Apple MacBook Pro",
-    "image": "https://media.croma.com/image/upload/v1685966374/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_umnwok.png",
-    "weight": "2.0kg",
-    "price": 2399.00
+      "name": "Mens Casual Premium Slim Fit T-Shirts",
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing.",
+      "price": 22.3,
+      "pictureUrl": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "categoryId": 1
   },
   {
-    "name": "Apple Watch Series 7",
-    "image": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7-availability_world-time-face_10052021_carousel.jpg.large.jpg",
-    "weight": "47.1g",
-    "price": 399.00
+      "name": "Mens Cotton Jacket",
+      "description": "Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "price": 55.99,
+      "pictureUrl": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "categoryId": 1
   },
   {
-    "name": "Apple AirPods Pro",
-    "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1692771141/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/262015_qwcykq.png",
-    "weight": "5.4g",
-    "price": 249.00
+      "name": "Mens Casual Slim Fit",
+      "description": "The color could be slightly different between on the screen and in practice.",
+      "price": 15.99,
+      "pictureUrl": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "categoryId": 1
   },
   {
-    "name": "Apple iPad Pro",
-    "image": "https://www.aptronixindia.com/media/catalog/product/i/p/ipad_10th_gen_1.png",
-    "weight": "1.0kg",
-    "price": 799.00
+      "name": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl.",
+      "price": 695,
+      "pictureUrl": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "categoryId": 2
   },
   {
-    "name": "Apple iMac 24-inch",
-    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/imac-24-no-id-blue-selection-hero-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1701459101618",
-    "weight": "4.48kg",
-    "price": 1299.00
+      "name": "Solid Gold Petite Micropave",
+      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "price": 168,
+      "pictureUrl": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "categoryId": 2
   },
   {
-    "name": "Apple HomePod mini",
-    "image": "https://i0.wp.com/llounge.in/wp-content/uploads/2021/05/homepod-mini-1.jpg?fit=500%2C500&ssl=1",
-    "weight": "345g",
-    "price": 99.00
+      "name": "White Gold Plated Princess",
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her.",
+      "price": 9.99,
+      "pictureUrl": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+      "categoryId": 2
   },
   {
-    "name": "Apple AirTag",
-    "image": "https://www.jiomart.com/images/product/original/491996661/apple-airtag-loop-made-with-durable-polyurethane-material-lightweight-mk0x3zm-a-electric-orange-digital-o491996661-p590778279-0-202109141847.jpeg?im=Resize=(420,420)",
-    "weight": "11g",
-    "price": 29.00
+      "name": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings.",
+      "price": 10.99,
+      "pictureUrl": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "categoryId": 2
   },
   {
-    "name": "Apple TV 4K",
-    "image": "https://m.media-amazon.com/images/I/51Y-Dulc3bL._AC_UF1000,1000_QL80_.jpg",
-    "weight": "425g",
-    "price": 179.00
+      "name": "WD 2TB Elements Portable External Hard Drive - USB 3.0",
+      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity.",
+      "price": 64,
+      "pictureUrl": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "categoryId": 3
   },
   {
-    "name": "Apple MagSafe Battery Pack",
-    "image": "https://static-01.daraz.pk/p/48fdb8d64c79fd3ad5f981f998e713e3.jpg_750x750.jpg_.webp",
-    "weight": "112g",
-    "price": 99.00
+      "name": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "description": "Easy upgrade for faster boot up, shutdown, application load and response.",
+      "price": 109,
+      "pictureUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "categoryId": 3
   },
   {
-    "name": "Apple MacBook Air",
-    "image": "https://media.croma.com/image/upload/v1685966374/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_umnwok.png",
-    "weight": "1.29kg",
-    "price": 999.00
+      "name": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "description": "3D NAND flash are applied to deliver high transfer speeds.",
+      "price": 109,
+      "pictureUrl": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+      "categoryId": 3
   },
   {
-    "name": "Apple iPhone 13",
-    "image": "https://cellbuddy.in/buddy/wp-content/uploads/2022/09/13-red.png",
-    "weight": "174g",
-    "price": 699.00
+      "name": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design.",
+      "price": 114,
+      "pictureUrl": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+      "categoryId": 3
   },
   {
-    "name": "Apple iPad mini",
-    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-select-wifi-purple-202109_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&.v=1629840706000",
-    "weight": "300.5g",
-    "price": 499.00
+      "name": "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin Monitor",
+      "description": "21.5 inches Full HD widescreen IPS display And Radeon free Sync technology.",
+      "price": 599,
+      "pictureUrl": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "categoryId": 3
   },
   {
-    "name": "Apple iPod touch",
-    "image": "https://www.siasat.com/wp-content/uploads/2022/05/ipod.jpg",
-    "weight": "88g",
-    "price": 199.00
+      "name": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor – Super Ultrawide Screen",
+      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side.",
+      "price": 999.99,
+      "pictureUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "categoryId": 3
   },
   {
-    "name": "Apple Pencil (2nd Generation)",
-    "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/apple-pencil-2nd-gen-KaEv9J9-600.jpg",
-    "weight": "20.7g",
-    "price": 129.00
+      "name": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear.",
+      "price": 56.99,
+      "pictureUrl": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "categoryId": 4
   },
   {
-    "name": "Apple Watch SE",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1vklypfyk4N4b0_6PCyBQ-XgtumyCPb5FI6IfR2GIg&s",
-    "weight": "36.4g",
-    "price": 279.00
+      "name": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining).",
+      "price": 29.95,
+      "pictureUrl": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      "categoryId": 4
   },
   {
-    "name": "Apple Magic Keyboard",
-    "image": "https://detec.in/cdn/shop/products/3_991f7a26-c0f1-4818-974a-7eb54b1f0be7.jpg?v=1651045166",
-    "weight": "690g",
-    "price": 349.00
+      "name": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "description": "Lightweight perfect for trip or casual wear, long sleeve with hooded, adjustable drawstring waist design.",
+      "price": 39.99,
+      "pictureUrl": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_.jpg",
+      "categoryId": 4
   },
   {
-    "name": "Apple Leather Sleeve",
-    "image": "https://m.media-amazon.com/images/I/31KK-prXanL.jpg",
-    "weight": "480g",
-    "price": 199.00
+      "name": "MBJ Women's Solid Short Sleeve Boat Neck V",
+      "description": "95% RAYON 5% SPANDEX, Lightweight fabric with great stretch for comfort.",
+      "price": 9.85,
+      "pictureUrl": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+      "categoryId": 4
   },
   {
-    "name": "Apple Magic Mouse 2",
-    "image": "https://m.media-amazon.com/images/I/51yO5ZmagBL.jpg",
-    "weight": "99.2g",
-    "price": 79.00
+      "name": "Opna Women's Short Sleeve Moisture",
+      "description": "100% Polyester, Lightweight, roomy and highly breathable with moisture-wicking fabric.",
+      "price": 7.95,
+      "pictureUrl": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+      "categoryId": 4
   },
   {
-    "name": "Apple Lightning to USB Cable",
-    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MD818?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1600799997000",
-    "weight": "20.4g",
-    "price": 19.00
+      "name": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print, V-Neck, Fashion Tees.",
+      "price": 12.99,
+      "pictureUrl": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+      "categoryId": 4
   },
   {
-    "name": "Apple iPad Pro",
-    "image": "https://www.aptronixindia.com/media/catalog/product/i/p/ipad_10th_gen_1.png",
-    "weight": "1.0kg",
-    "price": 799.00
-  },
-  {
-    "name": "Apple iMac 24-inch",
-    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/imac-24-no-id-blue-selection-hero-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1701459101618",
-    "weight": "4.48kg",
-    "price": 1299.00
-  },
-  {
-    "name": "Apple HomePod mini",
-    "image": "https://i0.wp.com/llounge.in/wp-content/uploads/2021/05/homepod-mini-1.jpg?fit=500%2C500&ssl=1",
-    "weight": "345g",
-    "price": 99.00
-  },
-  {
-    "name": "Apple AirTag",
-    "image": "https://www.jiomart.com/images/product/original/491996661/apple-airtag-loop-made-with-durable-polyurethane-material-lightweight-mk0x3zm-a-electric-orange-digital-o491996661-p590778279-0-202109141847.jpeg?im=Resize=(420,420)",
-    "weight": "11g",
-    "price": 29.00
+
+      "name": "Apple AirTag",
+      "pictureUrl": "https://www.jiomart.com/images/product/original/491996661/apple-airtag-loop-made-with-durable-polyurethane-material-lightweight-mk0x3zm-a-electric-orange-digital-o491996661-p590778279-0-202109141847.jpeg?im=Resize=(420,420)",
+      "price": 129,
+      "description": "21.5 inches Full HD widescreen IPS display And Radeon free Sync technology.",
+      "categoryId": 3
+    },
+    {
+      "name": "Apple Pencil (2nd Generation)",
+      "pictureUrl": "https://atlas-content-cdn.pixelsquid.com/stock-images/apple-pencil-2nd-gen-KaEv9J9-600.jpg",
+      "price": 129,
+      "description": "21.5 inches Full HD widescreen IPS display And Radeon free Sync technology.",
+      "categoryId": 3
   }
 ]
