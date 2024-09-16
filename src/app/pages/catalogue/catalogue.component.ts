@@ -32,6 +32,9 @@ interface CartItem {
 })
 export class CatalogueComponent implements OnInit {
   products: Product[] = [];
+  filteredProducts: Product[] = [];
+  filterTerm: string = '';
+
   totalItems = 0;
   pageSize = 10;
   pageIndex = 0;
@@ -92,5 +95,9 @@ export class CatalogueComponent implements OnInit {
   addToCart(product: Product): void {
     this.cartService.addToCart(product);
   }
-
+  filterProducts(): void {
+    this.filteredProducts = this.products.filter(product =>
+      product.name.toLowerCase().includes(this.filterTerm.toLowerCase())
+    );
+  }
 }

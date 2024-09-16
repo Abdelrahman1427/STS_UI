@@ -1,4 +1,7 @@
+<input type="text" [(ngModel)]="filterTerm" (input)="filterProducts()" placeholder="Filter products by name" />
+
 <div class="product-container">
+
   <div *ngFor="let product of products" class="product-card">
     <img class="product-image" [src]="product.pictureUrl" alt="{{ product.name }}">
     <h3 class="product-name">{{ product.name }}</h3>
