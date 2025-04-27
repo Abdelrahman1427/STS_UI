@@ -4,7 +4,7 @@ pipeline {
     environment {
         GIT_REPO = 'https://github.com/Abdelrahman1427/STS_UI.git'
         BRANCH = 'main'
-        REMOTE_DIR = '/path/to/remote/directory' // Directory on the remote machine
+        REMOTE_DIR = '/' // Directory on the remote machine
     }
 
     stages {
